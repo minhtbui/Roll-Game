@@ -20,8 +20,8 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 	if (isGamePlaying) {
 		var dice0, dice1;
 
-		dicesDOM[2].src = 'dice-' + preDice0 + '.png';
-		dicesDOM[3].src = 'dice-' + preDice1 + '.png';
+		dicesDOM[2].src = 'img/dice-' + preDice0 + '.png';
+		dicesDOM[3].src = 'img/dice-' + preDice1 + '.png';
 		document.querySelector('.player-previous-score').style.display = "block"; //display previous score box
 
 		//roll random number when btn was clicked
@@ -30,8 +30,8 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 
 		dicesDOM[0].style.display = "block"; //display the dice after click btn
 		dicesDOM[1].style.display = "block";
-		dicesDOM[0].src = 'dice-' + dice0 + '.png'; //change dice image as dice num
-		dicesDOM[1].src = 'dice-' + dice1 + '.png';
+		dicesDOM[0].src = 'img/dice-' + dice0 + '.png'; //change dice image as dice num
+		dicesDOM[1].src = 'img/dice-' + dice1 + '.png';
 
 		//two 6 on a row, the player will lose his entries score and turn next player
 		if (preDice0 === 6 && dice0 === 6 || preDice0 === 6 && dice1 === 6 || preDice1 === 6 && dice0 === 6 || preDice1 === 6 && dice1 === 6) {
